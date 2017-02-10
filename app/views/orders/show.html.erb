@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @order.category_id %>
+</p>
+
+<p>
+  <strong>Session:</strong>
+  <%= @order.session_id %>
+</p>
+
+<p>
+  <strong>Item name:</strong>
+  <%= @order.item_name %>
+</p>
+
+<p>
+  <strong>Item quantity:</strong>
+  <%= @order.item_quantity %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @order.total %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>
